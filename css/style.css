@@ -17,16 +17,10 @@ a{
     text-decoration: none;
     color: #ea5933;
 }
-.m-container{
-    padding-top: 45px;
-}
+
 
 /*Start Header*/
 .m-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     background: #ffffff;
     height: 45px;
     z-index: 111;
@@ -59,7 +53,7 @@ a{
 
 /*Start path-way*/
 .path-way ul{
-    margin: 0px 20px 15px ;
+    margin: 0px 15px 15px ;
     list-style: none;
     padding: 0;
 }
@@ -109,12 +103,12 @@ a{
     margin-top: 0;
 }
 .price{
-    margin-top: 10px;
     color: #07b000;
     font-size: 20px;
     font-weight: 600;
     margin-right: 10px;
     text-align: right;
+    margin-top: 20px
 }
 /*End ad-title*/
 .ad-post-date{
@@ -134,23 +128,55 @@ a{
 }
 /*End title-border*/
 /*Start Slider*/
-.fotorama{
-    border-radius: 5px;
-}
-.fotorama__wrap
-{
-    max-width: 100%;
-    margin:  auto;
-}
-.fotorama__stage__frame{
-   border-radius: 5px; 
-}
-.fotorama__active .fotorama__img{
-   width: 100%;
-    border-radius: 5px;
-    z-index: 9;
-}
 
+
+    /*.slider img{
+        border-radius: 5px;
+        margin: auto;
+        width: 500px;
+       
+    }*/
+.slider {
+    position: relative;
+}
+.fotorama__wrap--css3 .fotorama__stage .fotorama__img{
+    width: 100% !important;
+    object-fit: cover;
+    left: 0 !important;
+    border-radius: 5px !important;
+    min-height: 173px !important;
+}
+.fotorama__stage__frame.fotorama__active{
+    border-radius: 5px;
+    
+}
+.num{
+    position: absolute;
+    text-align: center;
+    bottom: 77px;
+    left: 0px;
+    right: 0;
+    font-size: 15px;
+    background-color: rgba(0,0,0,.4);
+    color: #fff;
+    display: inline-block;
+    width: 70px;
+    padding: 5px 2px;
+    border-radius: 5px;
+    
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img{
+         height: 250px;
+    object-fit: cover;
+   
+    object-position: center;
+}
+.carousel-control.left,.carousel-control.right{
+       background: none;
+    }
+.carousel-indicators{
+    bottom: -15px;
+}
 
 
 /*End Slider*/
@@ -183,8 +209,11 @@ a{
 
 
 /*End Description*/
-
+.details{
+    margin-top: 10px;
+}
 .details ul{
+     border-top: 3px solid #07b000;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -247,6 +276,104 @@ a{
     font-size: 10px;
     padding: 5px;
 }
+
+/*Start contact*/
+
+
+.contact{
+   overflow: hidden;
+    position: fixed;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding-top:2px;
+    border: 1px solid #d8d9da;
+    z-index: 9999;  
+}
+.contact1{
+   overflow: hidden;
+    background: #fff;
+    padding-top:5px;
+    border: 1px solid #d8d9da;
+    z-index: 9999;  
+    margin: 0 -15px;
+    
+    
+}
+.contact .cont-box,.contact1 .cont-box{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.contact .cont-box img,.contact1 .cont-box img{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+.contact .cont-box span,.contact1 .cont-box span{
+    display: block;
+    padding: 2px 0 0 0;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+   
+}
+.clearx{
+    clear: both;
+}
+/*End contact*/
+/*Start spot box*/
+.spot-box{
+    border: 1px solid #d8d9da;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.inner-box{
+    overflow: hidden;
+    padding:  5px;
+    position: relative;
+    border-bottom: 1px solid #d8d9da; 
+}
+.inner-box:last-child{
+    border-bottom:none;
+}
+.img-box{
+    float: left;
+    width: 35%;
+    border-radius: 5px;
+    
+}
+.img-box img{
+    width: 100%;
+}
+.contt-box{
+     float: left;
+    width: 65%;
+   padding: 2px 5px;
+   
+}
+.title-box{
+    line-height: 1;
+     font-weight: 600;
+}
+.title-box h1{
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    font-family: inherit;
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+.price-box{
+    font-weight: 300;
+    position: absolute;
+    bottom: 0px;
+    
+}
+/*End spot box*/
+
 /*Start Footer*/
 .m-footer{
     text-align: center;
